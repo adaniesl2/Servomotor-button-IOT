@@ -38,7 +38,7 @@ if st.button('ON'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
     message =json.dumps({"Act1":act1})
-    ret= client1.publish("TOPIC_andres_danies_github", message)
+    ret= client1.publish("8654abc", message)
  
     #client1.subscribe("Sensores")
     
@@ -52,7 +52,7 @@ if st.button('OFF'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
     message =json.dumps({"Act1":act1})
-    ret= client1.publish("TOPIC_andres_danies_github", message)
+    ret= client1.publish("8654abc", message)
   
     
 else:
@@ -66,7 +66,7 @@ if st.button('Enviar valor analógico'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)   
     message =json.dumps({"Analog": float(values)})
-    ret= client1.publish("TOPIC_andres_danies_github_a", message)
+    ret= client1.publish("8654xyz", message)
     
  
 else:
